@@ -96,8 +96,8 @@ class CodiceFiscale {
             die("Connection failed: ".$conn->connect_error);
         }
 
-        $city = "'".$city."'";
-        $query = "SELECT CodiceCatastale FROM codicicatastali WHERE Comune = ".$city." LIMIT 1";
+        $city = "'%".$city."%'";
+        $query = "SELECT CodiceCatastale FROM codicicatastali WHERE Luogo LIKE ".$city." LIMIT 1";
         $result = $conn->query($query);
         $result = $result->fetch_assoc()["CodiceCatastale"];
         $conn->close();
