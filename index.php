@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codice Fiscale PHP</title>
 </head>
+<script>
+
+</script>
 <body>
     <form action="codiceFiscale.php" method="post">
         Cognome: <input type="text" name="surname" value="Hossain"> <br>
