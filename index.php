@@ -14,8 +14,8 @@
         <input type="radio" class="class_codiceFiscale" id="radio_gender_male" name="gender" checked> Uomo
         <input type="radio" class="class_codiceFiscale" id="radio_gender_female" name="gender"> Donna<br>
         Luogo di nascita: <input type="text" class="class_codiceFiscale" id="text_city" name="city" value="Arzignano"> <br>
-        <button id="button_confirm" class="class_codiceFiscale" id="button_confirm" name="confirm" value="1" onclick="loadCodice()">Calcola</button>
-        <div id="div_result" names="result"></div>
+        <br>
+        <div font style="font-weight: bold;" id="div_result" names="result"></div>
     </div>
 </body>
 </html>
