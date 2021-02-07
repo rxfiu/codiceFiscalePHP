@@ -1,3 +1,0 @@
-function loadCodice() {
-    document.getElementById("")
-}

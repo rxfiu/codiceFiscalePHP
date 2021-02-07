@@ -196,9 +196,7 @@ class CodiceFiscale {
         $this->finalCode .= $this->controlCode;
     }
 }
-if(isset($_REQUEST["confirm"])) {
-    $code = new CodiceFiscale(
-        $_REQUEST["surname"], $_REQUEST["name"], $_REQUEST["gender"], $_REQUEST["date"], $_REQUEST["city"]); 
-    echo $code->getCode();
-}
+$code = new CodiceFiscale(
+    $_REQUEST["surname"], $_REQUEST["name"], $_REQUEST["gender"], $_REQUEST["date"], $_REQUEST["city"]); 
+echo $code->getCode();
 ?>
