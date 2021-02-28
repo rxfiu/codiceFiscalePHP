@@ -134,7 +134,7 @@ class CodiceFiscale {
         }
         for($i = 0; ($i < strlen($surname)) && $isShort; $i++){
             if($this->isVowel($surname[$i])) {
-                $result .= $surname[i];
+                $result .= $surname[$i];
                 if(strlen($result) == 3)
                     $isShort = false;
             }
